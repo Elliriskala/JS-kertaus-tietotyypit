@@ -5,3 +5,12 @@ Natural numbers are positive integers used for counting and representing quantit
 
 'use strict';
 
+const num = prompt('Enter an positive integer:');
+let sum = 0;
+
+for (let i=0; i<=num; i++) {
+  sum += i;
+}
+
+const result = document.querySelector('#target');
+result.insertAdjacentHTML('beforeend', `The sum of natural numbers including the entered integer: ${sum}`);
